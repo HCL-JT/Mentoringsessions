@@ -1,0 +1,54 @@
+10-05|15:00:55.771 [Thread-6] INFO  [Main.java:494] - Shutting down
+10-05|15:00:55.787 [Thread-6] INFO  [Main.java:498] - Stopping org.kairosdb.core.scheduler.KairosDBSchedulerImpl
+10-05|15:00:55.802 [Thread-6] INFO  [QuartzScheduler.java:653] - Scheduler QuartzScheduler_$_NON_CLUSTERED shutting down.
+10-05|15:00:55.802 [Thread-6] INFO  [QuartzScheduler.java:572] - Scheduler QuartzScheduler_$_NON_CLUSTERED paused.
+10-05|15:00:56.099 [Thread-6] INFO  [QuartzScheduler.java:725] - Scheduler QuartzScheduler_$_NON_CLUSTERED shutdown complete.
+10-05|15:00:56.099 [Thread-6] INFO  [Main.java:502] - Stopped  org.kairosdb.core.scheduler.KairosDBSchedulerImpl
+10-05|15:00:56.099 [Thread-6] INFO  [Main.java:498] - Stopping org.kairosdb.core.http.WebServer
+10-05|15:00:56.115 [Thread-6] INFO  [ContextHandler.java:843] - stopped o.e.j.s.ServletContextHandler{/,null}
+10-05|15:00:56.193 [Thread-6] INFO  [Main.java:502] - Stopped  org.kairosdb.core.http.WebServer
+10-05|15:00:56.193 [Thread-6] INFO  [Main.java:510] - Stopping Datastore
+10-05|15:00:56.193 [main] INFO  [Main.java:357] - --------------------------------------
+10-05|15:00:56.193 [main] INFO  [Main.java:358] -      KairosDB service is now down!
+10-05|15:02:17.045 [main] ERROR [Main.java:232] - Unable to load service kairosdb.service.reporter
+java.lang.ClassNotFoundException: <disabled>
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:609)
+	at java.lang.ClassLoader.loadClassHelper(ClassLoader.java:925)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:870)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:343)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:853)
+	at org.kairosdb.core.Main.<init>(Main.java:198)
+	at org.kairosdb.core.Main.main(Main.java:283)
+10-05|15:02:21.826 [main] INFO  [StdSchedulerFactory.java:1175] - Using default implementation for ThreadExecutor
+10-05|15:02:21.857 [main] INFO  [SchedulerSignalerImpl.java:61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+10-05|15:02:21.857 [main] INFO  [QuartzScheduler.java:243] - Quartz Scheduler v.2.1.7 created.
+10-05|15:02:21.857 [main] INFO  [RAMJobStore.java:154] - RAMJobStore initialized.
+10-05|15:02:21.857 [main] INFO  [QuartzScheduler.java:268] - Scheduler meta-data: Quartz Scheduler (v2.1.7) 'QuartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 4 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+10-05|15:02:21.857 [main] INFO  [StdSchedulerFactory.java:1324] - Quartz scheduler 'QuartzScheduler' initialized from an externally provided properties instance.
+10-05|15:02:21.857 [main] INFO  [StdSchedulerFactory.java:1328] - Quartz scheduler version: 2.1.7
+10-05|15:02:21.857 [main] INFO  [QuartzScheduler.java:2247] - JobFactory set to: org.kairosdb.core.scheduler.KairosDBJobFactory@edfb64ad
+10-05|15:02:21.857 [main] INFO  [Main.java:484] - Starting service class org.kairosdb.core.scheduler.KairosDBSchedulerImpl
+10-05|15:02:21.857 [main] INFO  [QuartzScheduler.java:534] - Scheduler QuartzScheduler_$_NON_CLUSTERED started.
+10-05|15:02:21.873 [main] INFO  [H2Datastore.java:66] - Starting H2 database in D:/IBM/RTCP-Workspace/kairosdb/h2db
+10-05|15:02:21.982 [main] INFO  [Jdk14MLog.java:124] - MLog clients using java 1.4+ standard logging.
+10-05|15:02:25.389 [main] INFO  [KairosDBSchedulerImpl.java:83] - *** Scheduled job org.kairosdb.core.jobs.CacheFileCleaner to execute next on Sun Oct 10 12:00:00 EDT 2021
+10-05|15:02:25.404 [main] INFO  [Main.java:484] - Starting service class org.kairosdb.core.http.WebServer
+10-05|15:02:25.592 [main] INFO  [Server.java:272] - jetty-8.1.16.v20140903
+10-05|15:02:26.139 [main] INFO  [GuiceComponentProviderFactory.java:116] - Registering org.kairosdb.core.http.rest.MetricsResource as a root resource class
+10-05|15:02:26.139 [main] INFO  [GuiceComponentProviderFactory.java:113] - Registering com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider as a provider class
+10-05|15:02:26.139 [main] INFO  [GuiceComponentProviderFactory.java:116] - Registering org.kairosdb.core.health.HealthCheckResource as a root resource class
+10-05|15:02:26.139 [main] INFO  [WebApplicationImpl.java:815] - Initiating Jersey application, version 'Jersey: 1.18.3 12/01/2014 08:23 AM'
+10-05|15:02:26.498 [main] INFO  [GuiceComponentProviderFactory.java:168] - Binding com.fasterxml.jackson.jaxrs.json.JacksonJsonProvider to GuiceManagedComponentProvider with the scope "Singleton"
+10-05|15:02:28.357 [main] INFO  [GuiceComponentProviderFactory.java:168] - Binding org.kairosdb.core.http.rest.MetricsResource to GuiceManagedComponentProvider with the scope "Singleton"
+10-05|15:02:28.685 [main] INFO  [GuiceComponentProviderFactory.java:168] - Binding org.kairosdb.core.health.HealthCheckResource to GuiceManagedComponentProvider with the scope "Singleton"
+10-05|15:02:28.857 [main] INFO  [AbstractConnector.java:338] - Started SelectChannelConnector@kubernetes.docker.internal:7828
+10-05|15:02:28.857 [main] INFO  [Main.java:342] - ------------------------------------------
+10-05|15:02:28.857 [main] INFO  [Main.java:343] -      KairosDB service started
+10-05|15:02:28.857 [main] INFO  [Main.java:344] - ------------------------------------------
